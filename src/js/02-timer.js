@@ -54,10 +54,9 @@ console.log(timerHtml)
 console.log(startBtn)
 let stopTimer = 0 
 startBtn.addEventListener('click', (event)=>{
-
   stopTimer+=1
   if (stopTimer === 1){
-    event.target= timer.start()
+     timer.start()
   }
  
 })

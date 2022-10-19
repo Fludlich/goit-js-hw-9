@@ -3,9 +3,12 @@ console.log(flatpickr)
 import "flatpickr/dist/flatpickr.min.css";
 import Notiflix from 'notiflix';
 console.log(Notiflix)
-// Notiflix.Notify.init({
-//   clickToClose: true,
-// })
+Notiflix.Notify.init({
+  clickToClose: true,
+  showOnlyTheLastOne: true,
+  closeButton: true,
+
+})
 const falsee=()=>{
   Notiflix.Notify.failure(
     'Choose the correct date',
@@ -29,6 +32,7 @@ const truee=()=>{
     'Youre date is valid',
     function cb() {
       // callback
+      
     },
   );
 }
@@ -190,8 +194,7 @@ const timer = {
       
       
     // }
-    
-  
+   
 
     if(arar>-1000){
       console.log('1')
@@ -219,5 +222,5 @@ const timer = {
    
   }
 }
-console.log(Date.now())
+
 
